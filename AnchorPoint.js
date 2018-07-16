@@ -1,18 +1,16 @@
 (function ($) {
 	var initialized = false;
-	$.fn.unSlip = function (args) {
+	$.fn.AnchorPoint = function (args) {
 		if (initialized) {
-			console.warn("unSlip is already initialized.\n Using settings from the first initialization");
+			console.warn("AnchorPoint is already initialized.\n Using settings from the first initialization");
 			return false;
 		}
 		initialized = true;
 
 		// Set Defaults
 		var opts = args || {};
-		var options = opts; // ??? 
-		options.scope = opts.scope || "body";
-		options.delay = opts.delay || 500;
-		options.depth = opts.depth || 0.5;
+		var options = opts;
+		options.depth = opts.depth || 0.2;
 		options.anchorTimeout = opts.anchorTimeout || 500;
 		options.debug = opts.debug || false;
 		if (opts.depth === 0) {
@@ -34,9 +32,8 @@
 
 					// Show anchor
 					if (options.debug) {
-						// TODO: Combine with conditional CSSOM style injection on anchor
-						$("[data-unSlip-anchor]").removeAttr("data-unSlip-anchor");
-						$anchor.attr("data-unSlip-anchor", true);
+						$("[data-AnchorPoint-anchor]").removeAttr("data-AnchorPoint-anchor");
+						$anchor.attr("data-AnchorPoint-anchor", true);
 					}
 				}, options.anchorTimeout);
 			} else {
