@@ -9,14 +9,14 @@ The user will typically experience this as content drifting through their viewpo
 
 Below is an example of a Wikipedia page starting at one position and ending elsewhere after resizing a few times.
 
-![Before AnchorPointJS](assets/example-before.png)
+![Before AnchorPointJS](assets/Example-Before.png)
 
 ## The Solution
 AnchorPointJS solves the above problem by "anchoring" to an element within the user's expected reading position on the page.  As they scroll, the anchor changes elements accordingly.  When the window is resized, AnchorPointJS will continuously update the scroll position to effectively hold the anchored-element in place on the page.
 
 Below is the same example from above, but no matter how much the page is resized, it will always be anchored to the nearest element to the red line.
 
-![Image of Yaktocat](assets/example-after.png)
+![After AnchorPointJS](assets/Example-After.png)
 
 ## Usage
 Simply add AnchorPointJS to your webpage after jQuery and invoke it on the main contents of your page.
