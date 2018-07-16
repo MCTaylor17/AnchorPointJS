@@ -4,15 +4,10 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta charset="utf-8">
-	<title>UnSlip Test</title>
-	<meta name="description" content="Demonstrating the effect of the unSlip page anchor plugin">
+	<title>AnchorManJS Example</title>
+	<meta name="description" content="Demonstrating the effect of the AnchorPoint page anchor plugin">
 	<style>
-		/* 
-        visibly show the unslip anchor
-        TODO: Move into CSSOM conditionally based on debug flag in options
-        */
-
-		[data-unSlip-anchor] {
+		[data-AnchorPoint-anchor] {
 			background: cyan;
 		}
 		h2 {
@@ -25,7 +20,7 @@
 </head>
 
 <body>
-	<h1>unSlip Demonstration</h1>
+	<h1>AnchorPoint Demonstration</h1>
 	<h2>aesthetic pitchfork. Portland keytar</h2>
 	<p>Dreamcatcher quinoa man bun <em>aesthetic pitchfork. Portland keytar</em> pabst beard chambray cardigan ugh sartorial. Chartreuse everyday carry trust fund hammock lomo <strong>butcher taxidermy bitters brooklyn</strong>, keytar literally. Tumblr hammock subway tile yr shaman disrupt pitchfork blue bottle kogi deep v enamel pin food truck four dollar toast butcher hella. Flannel air plant <a href="#">disrupt crucifix, viral selvage </a>mixtape occupy. Cred beard cornhole, hoodie blog tofu brunch chia.</p>
 	<p>Intelligentsia af polaroid, <em>biodiesel waistcoat locavore tumeric thundercats</em> mustache keffiyeh blog tattooed flannel disrupt activated charcoal. Church-key slow-<strong>carb YOLO bushwick.</strong> Wolf forage distillery keffiyeh, raclette tilde brooklyn lomo yuccie. Typewriter man braid echo park vape ennui, godard intelligentsia glossier vice marfa whatever kogi meh VHS. La croix umami hammock chia <a href="#">meditation. Whatever letterpress flannel </a>poutine, chartreuse subway tile affogato butcher readymade normcore adaptogen polaroid pabst.</p>
@@ -123,17 +118,16 @@
 	<h2>woke Drinking vinegar hella</h2>
 	<p>Enamel pin vice knausgaard <em>woke. Drinking vinegar hella</em> kombucha vice snackwave kale chips tilde celiac heirloom selfies gluten-free leggings unicorn <strong>swag. Hashtag helvetica</strong> actually intelligentsia pickled activated charcoal salvia, vaporware vegan kogi gastropub cold-pressed banh mi. Shaman PBR&amp;B seitan, banjo occupy iPhone slow-carb cronut swag cold-<a href="#">pressed farm-to-</a>table. Literally art party stumptown occupy, VHS street art tumeric.</p>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="unslip.js"></script>
+	<script src="AnchorPoint.js"></script>
 	<script>
 		(function() {
-			var unSlipOptions = {
+			var AnchorPointOptions = {
 				debug: true,
 				depth: 0.3,
 				anchorTimeout: 1000
 			};
 
-			//$("body").unSlip();
-			$("body").unSlip(unSlipOptions);
+			$("body").AnchorPoint(AnchorPointOptions);
 		}(jQuery))
 	</script>
 </body>
